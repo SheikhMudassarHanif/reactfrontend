@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+  }
+  
+  /* Dashboard Styles */
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Section */
+  .dashboard-header {
+    width: 100%;
+    background-color: #0099cc;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dashboard-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .nav-button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #007eaa;
+  }
+  
+  .logout-button {
+    background-color: #ff4d4d;
+    border: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Hero Section */
+  .dashboard-hero {
+    text-align: center;
+    margin: 2rem;
+    animation: fadeIn 1s ease;
+  }
+  
+  .dashboard-hero h2 {
+    font-size: 2rem;
+    color: #0099cc;
+  }
+  
+  .dashboard-hero p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Cards Section */
+  .dashboard-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    width: 80%;
+  }
+  
+  .dashboard-card {
+    width: 45%;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dashboard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .volunteer-card {
+    border-left: 4px solid #0099cc;
+  }
+  
+  .maps-card {
+    border-left: 4px solid #007eaa;
+  }
+  
+  .card-button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #0099cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-button:hover {
+    background-color: #007eaa;
+  }
+  
+  /* Footer */
+  .dashboard-footer {
+    width: 100%;
+    background-color: #0099cc;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .dashboard-footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  .dashboard-footer nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

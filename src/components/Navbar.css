@@ -1,0 +1,88 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0099cc;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar-logo h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.navbar-links li a:hover {
+  color: #ffcc00;
+}
+
+.navbar-auth {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-auth button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.login {
+  background-color: white;
+  color: #0099cc;
+}
+
+.signup {
+  background-color: #ffcc00;
+  color: #0099cc;
+}
+
+.login:hover,
+.signup:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+.navbar-auth .logout {
+  background-color: #ff4d4d; /* Red for logout */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.navbar-auth .logout:hover {
+  background-color: #ff3333;
+}

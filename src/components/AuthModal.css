@@ -1,0 +1,131 @@
+.auth-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .auth-modal-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 700px;
+    max-height: 90vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .auth-modal-image {
+    width: 40%;
+    background-color: #0099cc;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .auth-modal-image img {
+    max-width: 90%;
+    max-height: 150px;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .auth-modal-form {
+    width: 60%;
+    padding: 1.5rem;
+    position: relative;
+    overflow-y: auto;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .form-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  .toggle-button.active {
+    color: #0099cc;
+    font-weight: bold;
+  }
+  
+  .auth-form h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .auth-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #007eaa;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .auth-modal-container {
+      flex-direction: column;
+      width: 90%;
+      max-width: 400px;
+    }
+  
+    .auth-modal-image,
+    .auth-modal-form {
+      width: 100%;
+    }
+  
+    .auth-modal-image img {
+      max-height: 120px;
+    }
+  }
+  
