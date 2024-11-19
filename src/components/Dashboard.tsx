@@ -103,7 +103,7 @@ const Dashboard: React.FC = () => {
 
           {isAuthenticated ? (
             <>
-              {/* <span>Welcome Back!</span> */}
+              
               <button className="logout-button" onClick={handleLogout}>Logout</button>
             </>
           ) : (

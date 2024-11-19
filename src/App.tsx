@@ -123,7 +123,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutUs />} />
       </Routes>
-      <Hero />
+      
       <Features />
       <Contact />
       <AboutUs />
